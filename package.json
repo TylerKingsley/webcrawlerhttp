@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TylerKingsley/webcrawlerhttp.git"
+    "url": "git+https://github.com/tylerrobins/webcrawlerhttp.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TylerKingsley/webcrawlerhttp/issues"
+    "url": "https://github.com/tylerrobins/webcrawlerhttp/issues"
   },
-  "homepage": "https://github.com/TylerKingsley/webcrawlerhttp#readme",
+  "homepage": "https://github.com/tylerrobins/webcrawlerhttp#readme",
   "devDependencies": {
     "jest": "^29.7.0"
   }
