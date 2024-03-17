@@ -20,7 +20,7 @@ async function crawlPage(baseURL, currentURL, pages) {
         const resp = await fetch(currentURL)
 
         if (resp.status > 399) {
-            console.error(`Error fetching ${currentURL}: ${resp.status}`)
+            console.log(`Error fetching ${currentURL}: ${resp.status}`)
             return pages
         } 
 
@@ -38,7 +38,7 @@ async function crawlPage(baseURL, currentURL, pages) {
         }
 
     } catch (err) {
-        console.error(`Error fetching ${currentURL}: ${err.message}`)
+        console.log(`Error fetching ${currentURL}: ${err.message}`)
     }
     return pages
 }
@@ -59,7 +59,7 @@ function getURLSfromHTML(htmlBody, baseURL) {
                 const urlObj = new URL(linkElement.href)
                 urls.push(urlObj.href)
             } catch (err) {
-                console.error(`Error with absolute url: ${err.message}`)
+                console.log(`Error with absolute url: ${err.message}`)
             }
         }
     })
